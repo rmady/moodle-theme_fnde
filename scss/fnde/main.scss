@@ -1,7 +1,11 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Roboto";
+  font-family: "Source Sans Pro";
+}
+
+a {
+    color: $institucional-link;
 }
 
 // Rounded user pictures
@@ -26,3 +30,28 @@ body {
 }
 
 @include bg-variant(".bg-gray", $gray-200, true);
+
+
+.card {
+	background-color: $white;
+	border: 0 none;
+	border-radius: $border-radius;
+	box-shadow: $box-shadow;
+	.card-title {
+		font-size: 1rem;
+		font-weight: 400;
+    	+ .card-text {
+			border-top: 1px solid $gray-300;
+	    	padding-top: 1rem;
+		}		
+	}
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+#page-my-index {
+	background-color: $gray-100;
+}

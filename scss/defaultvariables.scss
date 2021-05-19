@@ -1,14 +1,14 @@
 // Bootstrap variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #f5f7fa !default; /* #f8f9fa */
 $gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-300: #d4dadd !default; /* #dee2e6 */
 $gray-400: #ced4da !default;
 $gray-500: #8f959e !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-900: #243342 !default; /* #212529 */
 $black:    #000 !default;
 
 $blue:    #0f6fc5 !default;
@@ -31,6 +31,18 @@ $secondary:     $gray-400 !default;
 
 $info-outline:    #1f7e9a;
 $warning-outline: #a6670e;
+
+$institucional-01:   #134663;
+$institucional-02:   #196096;
+$institucional-03:   #4192CF;
+$institucional-04:   #142E52;
+$institucional-05:   #cfe2fc; /* dropdown usermenu border */
+$institucional-info: #005EB8;
+$institucional-link: #006BFF;
+
+// Layout
+$border-radius: 12px;
+$box-shadow: 0 4px 8px 0 rgba($institucional-04, 0.2);
 
 // Options
 $enable-rounded: false !default;

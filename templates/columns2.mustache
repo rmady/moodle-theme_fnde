@@ -41,13 +41,13 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{> theme_boost/navbar }}
+    {{> theme_fnde/navbar }}
     {{> theme_boost/nav-drawer }}
 
-    <div id="page" class="container-fluid d-print-block">
+    <div id="page" class="d-print-block">
         {{{ output.full_header }}}
 
-        <div id="page-content" class="row pb-3 d-print-block">
+        <div id="page-content" class="container-fluid row pb-3 d-print-block">
             <div id="region-main-box" class="col-12">
                 {{#hasregionmainsettingsmenu}}
                 <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
