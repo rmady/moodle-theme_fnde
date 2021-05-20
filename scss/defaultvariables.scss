@@ -1,14 +1,14 @@
 // Bootstrap variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #f5f7fa !default; /* #f8f9fa */
 $gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-300: #d4dadd !default; /* #dee2e6 */
 $gray-400: #ced4da !default;
 $gray-500: #8f959e !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-900: #243342 !default; /* #212529 */
 $black:    #000 !default;
 
 $blue:    #0f6fc5 !default;
@@ -31,6 +31,20 @@ $secondary:     $gray-400 !default;
 
 $info-outline:    #1f7e9a;
 $warning-outline: #a6670e;
+
+$brand-01:        #134663; /* institucional 01 */
+$brand-02:        #196096; /* institucional 02 */
+$brand-border-01: #cfe2fc; /* dropdown usermenu border */
+$brand-border-02: #e0e5eb; /* navdrawer border divisor */
+$brand-info:      #005EB8;
+$brand-link:      #006BFF; /* aside blocks links */
+$brand-shadow:    #142E52; /* box shadow */
+
+// Layout
+$border-radius:    12px;
+$box-shadow:       0 4px 8px 0 rgba($brand-shadow, 0.2);
+$regular-margin:   3rem;
+$min-width-margin: 1.5rem;
 
 // Options
 $enable-rounded: false !default;
@@ -98,3 +112,10 @@ $spacers: (
         5: ($spacer * 2),
         6: ($spacer * 3)
 ) !default;
+
+%card-style {
+    background-color: $white;
+    border: 0 none !important;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
