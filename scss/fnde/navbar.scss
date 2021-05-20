@@ -1,66 +1,72 @@
 .navbar {
-	background-color: $institucional-02 !important;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	.dropdown .dropdown-menu {
-		border: 1px solid $institucional-05;
-		border-radius: 8px;
-		box-shadow: $box-shadow;
-		top: 30px;
-		.dropdown-item {
-			color: $institucional-info;
-			font-size: 0.85rem;
-			.icon {
-				color: $institucional-01;
-    			font-size: 14px;
-    		}
-    		&:hover {
-    			background-color: transparent;
-    		}
-    		&:hover {
-    			background-color: transparent;
-    			color: $institucional-01;
-    			.icon {
-					color: $institucional-02;
-				}
-    		}
-		}
-	}
-	.usernav {
-		margin-right: 0;
-		.avatars {
-			float: left;
-		}
-		.usermenu .dropdown-toggle {
-			color: $white;
-			padding-right: 0;
-		}
-		.usertext {
-			color: $white;
-		}
-		img.userpicture {
-			height: 20px;
-			width: 20px;
-		}
-	}
+    background-color: $brand-02;
+    padding-left: $regular-margin;
+    padding-right: $regular-margin;
+    .dropdown .dropdown-menu {
+        border: 1px solid $brand-border-01;
+        border-radius: 8px;
+        box-shadow: $box-shadow;
+        top: 30px;
+        .dropdown-item {
+            color: $brand-info;
+            font-size: 0.85rem;
+            .icon {
+                color: $brand-01;
+                font-size: 14px;
+            }
+            &:focus {
+                background-color: transparent;
+            }
+            &:hover {
+                background-color: transparent;
+                color: $gray-900;
+            }
+        }
+    }
+    .usernav {
+        margin-right: 0;
+        .avatars {
+            float: left;
+        }
+        .usermenu .dropdown-toggle {
+            color: $white;
+            padding-right: 0;
+        }
+        .usertext {
+            color: $white;
+            font-size: .8rem;
+            font-weight: 700;
+        }
+        img.userpicture {
+            height: 20px;
+            width: 20px;
+        }
+    }
 }
 .navbar-expand .navbar-nav .nav-link {
     color: $white;
     &:hover {
-		color: $institucional-01;
-	}
+        color: $brand-02;
+    }
 }
 .navbar-brand {
-	color: $white;
-	font-weight: 900;
-	text-transform: uppercase;
-	&:hover {
-		color: $institucional-01;
-	}
+    color: $white;
+    font-weight: 900;
+    text-transform: uppercase;
+    &:hover {
+        color: $brand-02;
+    }
 }
 [data-action="toggle-drawer"] {
-	padding-left: 0;
-	.icon {
-		color: $gray-300;
-	}
+    padding-left: 0;
+    .icon {
+        color: $gray-300;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        padding-left: $min-width-margin;
+        padding-right: $min-width-margin;
+    }
 }

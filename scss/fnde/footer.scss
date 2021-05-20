@@ -1,37 +1,46 @@
 #page-footer {
-	background-color: $institucional-01;
-	.flex-item {
-		margin-right: 3rem;
-		h3 {
-			font-size: 0.9rem;
-    		font-weight: 600;
-		}
-		ul {
-		    list-style: none;
-		    margin-left: 0;
-		    padding-left: 0;
-		    a {
-		    	font-size: 0.85rem;
-		    	text-decoration: none;
-		    	&:hover {
-		    		color: $institucional-link;
-		    	}
-		    }
-		}
-	}
+    background-color: $brand-01;
+    .flex-item {
+        margin-right: $regular-margin;
+        h3 {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+        ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            a {
+                font-size: 0.85rem;
+                text-decoration: none;
+                &:hover {
+                    color: $brand-link;
+                }
+            }
+        }
+    }
 }
 
 #goto-top-link {
-	bottom: 0;
-	right: 1rem;
-	.btn {
-		background-color: $institucional-02;
-		border-radius: $border-radius $border-radius 0 0;
-		color: $white;
-		padding-left: 1rem;
-    	padding-right: 1rem;
-		.icon {
-			margin-right: 0;
-		}
-	}
+    bottom: 0;
+    right: $regular-margin;
+    .btn {
+        background-color: $brand-02;
+        border-radius: $border-radius $border-radius 0 0;
+        color: $white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .icon {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    #page-footer .flex-item {
+        margin-bottom: $min-width-margin;
+    }
+    #goto-top-link {
+        right: $min-width-margin;
+    }
 }

@@ -1,24 +1,65 @@
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Source Sans Pro";
+    background-color: $brand-02;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Source Sans Pro";
 }
 
 a {
-    color: $institucional-link;
+    color: $brand-link;
+    &:hover {
+        color: $gray-900;
+    }
 }
 
-// Rounded user pictures
-.userpicture {
-  border-radius: 50%;
+#page-wrapper {
+    background-color: $white;
+    #page {
+        background-color: $gray-100;
+        #page-content {
+            margin: 0;
+        }
+    }
+}
+
+#region-main-box {
+    padding: 0;
+}
+
+#region-main {
+    @extend %card-style;
+    &.has-blocks {
+        width: calc(100% - 360px - 1.5rem);
+    }
+}
+
+.breadcrumb {
+    margin-left: 0;
+    a,
+    .breadcrumb-item {
+        color: $gray-400;
+        font-size: .85rem;
+    }
+}
+
+.btn {
+    background-color: $brand-02;
+    border: 0 none;
+    border-radius: 8px;
+    color: $white;
+    &:hover {
+        background-color: $brand-link;
+        color: $white;
+    }
 }
 
 // Reset the default styling back to the bootstrap defaults for
 // the secondary outline button because gray-200 is much too light
 // for an outline button.
 .btn-outline-secondary {
-  @include button-outline-variant($gray-600);
-  border-color: $gray-600;
+    @include button-outline-variant($gray-600);
+    background-color: $gray-200;
+    border-color: $gray-600;
 }
 
 .btn-outline-info {
@@ -33,25 +74,47 @@ a {
 
 
 .card {
-	background-color: $white;
-	border: 0 none;
-	border-radius: $border-radius;
-	box-shadow: $box-shadow;
-	.card-title {
-		font-size: 1rem;
-		font-weight: 400;
-    	+ .card-text {
-			border-top: 1px solid $gray-300;
-	    	padding-top: 1rem;
-		}		
-	}
+    @extend %card-style;
+    .card-title {
+        font-size: 1rem;
+        font-weight: 400;
+        + .card-text {
+            border-top: 1px solid $gray-300;
+            padding-top: 1rem;
+        }       
+    }
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: $regular-margin;
+    padding-left: $regular-margin;
+}
+
+.simplesearchform .btn-submit {
+    background-color: $brand-02;
+    color: $white;
+    border-radius: 0 8px 8px 0;
 }
 
 #page-my-index {
-	background-color: $gray-100;
+    background-color: $gray-100;
 }
+
+// Rounded user pictures
+.userpicture {
+  border-radius: 50%;
+}
+
+@media (max-width: 1199.98px) {
+    #region-main.has-blocks {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+        padding-right: $min-width-margin;
+        padding-left: $min-width-margin;
+    }
+}
+

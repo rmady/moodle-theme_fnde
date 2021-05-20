@@ -1,12 +1,29 @@
 #page-header {
-	background-color: $institucional-01;
-	margin: 0 0 2rem;
-	.card {
-		background-color: transparent;
-		box-shadow: 0 0 0;
-	}
-	.page-header-headings h1 {
-		color: $white;
-		font-weight: 900;
-	}
+    background-color: $brand-01;
+    margin: 0 0 1.5rem;
+    .card {
+        background-color: transparent;
+        border: 0 none;
+        box-shadow: 0 0 0;
+        .card-body {
+            padding: 1.25rem calc($regular-margin - 15px);
+        }
+    }
+    .page-context-header {
+        padding: 0;
+    }
+    .page-header-headings h1 {
+        color: $white;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 1000px) {
+    #page-header {
+        .card {
+            .card-body {
+                padding: 1.25rem calc($min-width-margin - 15px);
+            }
+        }
+    }
 }
