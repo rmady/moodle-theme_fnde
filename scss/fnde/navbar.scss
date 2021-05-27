@@ -46,7 +46,7 @@
 .navbar-expand .navbar-nav .nav-link {
     color: $white;
     &:hover {
-        color: $brand-02;
+        color: $brand-01;
     }
 }
 .navbar-brand {
@@ -54,11 +54,11 @@
     font-weight: 900;
     text-transform: uppercase;
     &:hover {
-        color: $brand-02;
+        color: $brand-01;
     }
 }
 [data-action="toggle-drawer"] {
-    padding-left: 0;
+    margin-left: -.75rem;
     .icon {
         color: $gray-300;
     }

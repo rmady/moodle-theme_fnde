@@ -1,17 +1,17 @@
 #nav-drawer {
-	.list-group-item {
-		background-color: transparent;
-		border: 0 none;
-	    border-bottom: 1px solid $brand-border-02;
-	    color: $brand-02;
-	    font-size: .9rem;
-	    &.active,
-	    &:hover {
-	    	background-color: transparent;
-	    	border-color: $brand-border-02;
-	    	color: $brand-link;
-	    }
-	}
+    .list-group-item {
+        background-color: transparent;
+        border: 0 none;
+        border-bottom: 1px solid $brand-border-02;
+        color: $brand-02;
+        font-size: .9rem;
+        &.active,
+        &:hover {
+            background-color: transparent;
+            border-color: $brand-border-02;
+            color: $brand-link;
+        }
+    }
 }
 
 [data-region="drawer-toggle"] button {
