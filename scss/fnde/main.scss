@@ -72,6 +72,12 @@ a {
 
 @include bg-variant(".bg-gray", $gray-200, true);
 
+// message/notificationpreferences.php
+.btn-link.p-0 .text-info {
+    color: $white !important;
+    margin-right: 0;
+    padding: .25rem;
+}
 
 .card {
     @extend %card-style;
@@ -90,6 +96,10 @@ a {
     padding-left: $regular-margin;
 }
 
+.message-app .btn-link {
+    color: $white;
+}
+
 .simplesearchform .btn-submit {
     background-color: $brand-02;
     color: $white;
@@ -98,6 +108,17 @@ a {
 
 #page-my-index {
     background-color: $gray-100;
+}
+
+.message-app .view-overview-body {
+    .btn-link {
+        background-color: transparent;
+        border-radius: 0;
+        color: $brand-01;
+    }
+    .card {
+        border-radius: 0;
+    }
 }
 
 // Rounded user pictures

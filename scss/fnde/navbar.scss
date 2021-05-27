@@ -23,6 +23,21 @@
             }
         }
     }
+    .popover-region-container {
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        .see-all-link .popover-region-footer-container {
+            border: 0 none;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+        }
+    }
+    .popover-region-header-container {
+        display: inline-block;
+        height: auto;
+        padding: 1rem;
+        width: 100%;
+    }
     .usernav {
         margin-right: 0;
         .avatars {

@@ -59,6 +59,16 @@
     }
 }
 
+@media (max-width: 800px) {
+    #page-footer .social-links {
+        float: left;
+        +p {
+            clear: left;
+            text-align: left;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     #page-footer .flex-item {
         margin-bottom: $min-width-margin;
