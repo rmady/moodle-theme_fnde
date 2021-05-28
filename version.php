@@ -12,6 +12,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_fnde';
 $plugin->release   = '0.1.0';
-$plugin->version   = 2021051800;
+$plugin->version   = 2021052800;
 $plugin->requires  = 2020110900;
 $plugin->maturity  = MATURITY_ALPHA;
