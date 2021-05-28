@@ -23,6 +23,21 @@
             }
         }
     }
+    .popover-region-container {
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        .see-all-link .popover-region-footer-container {
+            border: 0 none;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+        }
+    }
+    .popover-region-header-container {
+        display: inline-block;
+        height: auto;
+        padding: 1rem;
+        width: 100%;
+    }
     .usernav {
         margin-right: 0;
         .avatars {
@@ -46,7 +61,7 @@
 .navbar-expand .navbar-nav .nav-link {
     color: $white;
     &:hover {
-        color: $brand-02;
+        color: $brand-01;
     }
 }
 .navbar-brand {
@@ -54,11 +69,11 @@
     font-weight: 900;
     text-transform: uppercase;
     &:hover {
-        color: $brand-02;
+        color: $brand-01;
     }
 }
 [data-action="toggle-drawer"] {
-    padding-left: 0;
+    margin-left: -.75rem;
     .icon {
         color: $gray-300;
     }

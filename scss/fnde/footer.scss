@@ -1,13 +1,19 @@
 #page-footer {
     background-color: $brand-01;
+    .d-flex {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        width: calc(100% + 3rem);
+    }
     .flex-item {
-        margin-right: $regular-margin;
+        margin: 0 1.5rem;
         h3 {
             font-size: 0.9rem;
             font-weight: 700;
         }
         ul {
             list-style: none;
+            margin-bottom: 0;
             margin-left: 0;
             padding-left: 0;
             a {
@@ -17,6 +23,23 @@
                     color: $brand-link;
                 }
             }
+        }
+    }
+    .social-links {
+        float: right;
+        a {
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            text-decoration: none;
+            &:hover {
+                color: $brand-link;
+            }
+        }
+        + p {
+            clear: right;
+            font-size: .85rem;
+            padding-top: 1rem;
+            text-align: right;
         }
     }
 }
@@ -32,6 +55,16 @@
         padding-right: 1rem;
         .icon {
             margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #page-footer .social-links {
+        float: left;
+        +p {
+            clear: left;
+            text-align: left;
         }
     }
 }
