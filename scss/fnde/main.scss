@@ -96,8 +96,21 @@ a {
     padding-left: $regular-margin;
 }
 
-.message-app .btn-link {
+.message-app .btn.btn-link.btn-icon {
     color: $white;
+    &:hover {
+        background-color: $brand-01;
+    }
+}
+.message-app .view-overview-body {
+    .btn-link {
+        background-color: transparent;
+        border-radius: 0;
+        color: $brand-01;
+    }
+    .card {
+        border-radius: 0;
+    }
 }
 
 .simplesearchform .btn-submit {
@@ -108,17 +121,6 @@ a {
 
 #page-my-index {
     background-color: $gray-100;
-}
-
-.message-app .view-overview-body {
-    .btn-link {
-        background-color: transparent;
-        border-radius: 0;
-        color: $brand-01;
-    }
-    .card {
-        border-radius: 0;
-    }
 }
 
 // Rounded user pictures

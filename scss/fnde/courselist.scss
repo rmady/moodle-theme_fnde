@@ -1,0 +1,29 @@
+.course_category_tree .category {
+    > .info > .categoryname {
+        background-image: none !important;
+        border-bottom: 2px solid $gray-100;
+        padding: 1rem 0 .5rem;
+        a {
+            color: $gray-900;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+        &::after {
+            background-color: $brand-02;
+            border-radius: 50%;
+            color: $white;
+            content: "\f078";
+            float: right;
+            font-family: 'FontAwesome';
+            font-size: .75rem;
+            height: 27px;
+            line-height: 27px;
+            margin-top: .5rem;
+            text-align: center;
+            width: 27px;
+        }
+    }
+    > .content {
+        padding-left: 0;
+    }
+}
