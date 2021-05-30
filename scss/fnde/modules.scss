@@ -15,6 +15,7 @@ body.path-mod-book {
             text-align: center;
             width: 27px;
             .icon {
+                font-size: .75rem;
                 margin-right: 0;
             }
         }
@@ -29,5 +30,72 @@ body.path-mod-forum {
     }
     [data-region="replies-container"] .forumpost {
         border-radius: 0 $border-radius $border-radius 0;
+    }
+}
+
+body.path-mod-quiz {
+    .que {
+        margin-bottom: 2.5rem;
+        .info {
+            background-color: transparent;
+            border: 0 none;
+            display: inline-block;
+            float: none;
+            margin-bottom: .5rem;
+            padding: 0;
+            width: 100%;
+            > div {
+                float: left;
+                margin-top: 0;
+                margin-right: 2rem;
+            }
+            h3.no {
+                color: $gray-800;
+                float: left;
+                font-size: 1rem;
+                font-weight: 900;
+                margin-right: 2rem;
+            }
+            span.qno {
+                font-size: 1rem;
+                font-weight: 900;
+            }
+            .editquestion a,
+            .questionflagtext {
+                color: $brand-02;
+            }
+        }
+        .content {
+            margin: 0;
+            .formulation {
+                background-color: $gray-100;
+                border: 1px solid $gray-200;
+                border-radius: $border-radius;
+            }
+        }
+    }
+    #mod_quiz_navblock .qnbutton {
+        background-color: $gray-100;
+        border-radius: 8px;
+        color: $gray-800;
+        font-weight: 900;
+        height: 50px;
+        padding-top: .25rem;
+        .thispageholder {
+            border: 1px solid $gray-400;
+            border-radius: 8px;
+        }
+        .trafficlight {
+            border-radius: 0 0 8px 8px;
+            border-top: 1px solid $gray-400;
+            height: 25px;
+            margin-top: 25px;
+        }
+        &.thispage {
+            background-color: $gray-300;
+            .thispageholder {
+                border-width: 1px;
+            }
+        }
     }
 }

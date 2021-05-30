@@ -123,6 +123,11 @@ a {
     }
 }
 
+.modified {
+    color: $gray-600;
+    font-size: .75rem;
+}
+
 .nav-tabs .nav-link {
     color: $brand-02;
     padding: .5rem 0;
@@ -151,6 +156,10 @@ a {
 
 h2 + .singlebutton {
     margin-bottom: 1rem;
+}
+
+.singlebutton + .continuebutton {
+    margin-top: 1rem;
 }
 
 .generaltable,
