@@ -16,6 +16,11 @@ a {
 .aabtn.focus, .btn-link.focus, .nav-link.focus, .atto_link_button.focus, [role="button"].focus, .list-group-item-action.focus, input[type="checkbox"].focus, input[type="radio"].focus, input[type="file"].focus, input[type="image"].focus, .sr-only-focusable.focus, a.dropdown-toggle.focus, .modal-dialog[tabindex="0"].focus, .moodle-dialogue-base .closebutton.focus, button.close.focus, .form-autocomplete-selection.focus, .aabtn:focus, .btn-link:focus, .nav-link:focus, .atto_link_button:focus, [role="button"]:focus, .list-group-item-action:focus, input[type="checkbox"]:focus, input[type="radio"]:focus, input[type="file"]:focus, input[type="image"]:focus, .sr-only-focusable:focus, a.dropdown-toggle:focus, .modal-dialog[tabindex="0"]:focus, .moodle-dialogue-base .closebutton:focus, button.close:focus, .form-autocomplete-selection:focus {
     box-shadow: 0 0 0; 
 }
+.aalink.focus, #page-footer a:not([class]).focus, .arrow_link.focus, a:not([class]).focus, .activityinstance>a.focus, .aalink:focus, #page-footer a:not([class]):focus, .arrow_link:focus, a:not([class]):focus, .activityinstance>a:focus {
+    background-color: transparent;
+    outline: 0 none;
+    box-shadow: 0 0 0;
+}
 
 #page-wrapper {
     background-color: $white;
@@ -134,10 +139,39 @@ a {
     }
 }
 
+.post-actions .post-action {
+    margin-left: .5rem;
+}
+
 .simplesearchform .btn-submit {
     background-color: $brand-02;
     color: $white;
     border-radius: 0 8px 8px 0;
+}
+
+h2 + .singlebutton {
+    margin-bottom: 1rem;
+}
+
+.generaltable,
+.table {
+    td,
+    th {
+        background-color: $gray-100;
+        border: 1px solid $white;
+        color: $gray-600;
+    }
+    thead th {
+        background-color: $gray-200;
+    }
+    thead tr:first-child {
+        th:first-child {
+            border-radius: $border-radius 0 0 0;
+        }
+        th:last-child {
+            border-radius: 0 $border-radius 0 0;
+        }
+    }
 }
 
 #page-my-index {
