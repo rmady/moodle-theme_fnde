@@ -128,19 +128,24 @@ a {
     font-size: .75rem;
 }
 
-.nav-tabs .nav-link {
-    color: $brand-02;
-    padding: .5rem 0;
-    margin: 0 1rem 0 0;
-    &:hover,
-    &:focus {
-        border-color: transparent transparent $brand-02;
+.nav-tabs {
+    .nav-item {
+        margin-bottom: -2px;
     }
-    &.active {
-        border-color: transparent;
-        border-bottom: 4px solid $brand-02;
+    .nav-link {
         color: $brand-02;
-        font-weight: 700;
+        padding: .5rem 0;
+        margin: 0 1rem 0 0;
+        &:hover,
+        &:focus {
+            border-color: transparent transparent $brand-02;
+        }
+        &.active {
+            border: 0 none;
+            border-bottom: 4px solid $brand-02;
+            color: $brand-02;
+            font-weight: 700;
+        }
     }
 }
 
