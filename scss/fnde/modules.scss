@@ -1,11 +1,33 @@
-body.path-mod-quiz {
 
-}
-
-body.path-mod-assign.pagelayout-embedded {
-
+body.path-mod-book {
+    .navtop,
+    .navbottom {
+        .booknext,
+        .bookexit,
+        .bookprev {
+            background-color: $brand-02;
+            border-radius: 50%;
+            color: $white;
+            display: inline-block;
+            height: 27px;
+            line-height: 27px;
+            margin-left: 0.5rem;
+            text-align: center;
+            width: 27px;
+            .icon {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 body.path-mod-forum {
-
+    .forumpost {
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        padding: 1rem !important;
+    }
+    [data-region="replies-container"] .forumpost {
+        border-radius: 0 $border-radius $border-radius 0;
+    }
 }
