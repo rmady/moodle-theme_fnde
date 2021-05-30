@@ -12,6 +12,11 @@ a {
     }
 }
 
+// Desabilitando estilo no :focus
+.aabtn.focus, .btn-link.focus, .nav-link.focus, .atto_link_button.focus, [role="button"].focus, .list-group-item-action.focus, input[type="checkbox"].focus, input[type="radio"].focus, input[type="file"].focus, input[type="image"].focus, .sr-only-focusable.focus, a.dropdown-toggle.focus, .modal-dialog[tabindex="0"].focus, .moodle-dialogue-base .closebutton.focus, button.close.focus, .form-autocomplete-selection.focus, .aabtn:focus, .btn-link:focus, .nav-link:focus, .atto_link_button:focus, [role="button"]:focus, .list-group-item-action:focus, input[type="checkbox"]:focus, input[type="radio"]:focus, input[type="file"]:focus, input[type="image"]:focus, .sr-only-focusable:focus, a.dropdown-toggle:focus, .modal-dialog[tabindex="0"]:focus, .moodle-dialogue-base .closebutton:focus, button.close:focus, .form-autocomplete-selection:focus {
+    box-shadow: 0 0 0; 
+}
+
 #page-wrapper {
     background-color: $white;
     #page {
@@ -110,6 +115,22 @@ a {
     }
     .card {
         border-radius: 0;
+    }
+}
+
+.nav-tabs .nav-link {
+    color: $brand-02;
+    padding: .5rem 0;
+    margin: 0 1rem 0 0;
+    &:hover,
+    &:focus {
+        border-color: transparent transparent $brand-02;
+    }
+    &.active {
+        border-color: transparent;
+        border-bottom: 4px solid $brand-02;
+        color: $brand-02;
+        font-weight: 700;
     }
 }
 
