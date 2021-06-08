@@ -34,3 +34,6 @@ $string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference f
 $string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
 $string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
 $string['totop'] = 'Go to top';
+
+$string['hideblocks'] = 'Ocultar blocos';
+
