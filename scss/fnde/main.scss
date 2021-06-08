@@ -47,6 +47,20 @@ a {
     }
 }
 
+#hide-blocks {
+    background-color: $white;
+    border: 1px solid $brand-02;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+    color: $brand-02;
+    float: right;
+    margin-bottom: 1rem;
+    &:hover {
+        background-color: $brand-02;
+        color: $white;
+    }
+}
+
 .breadcrumb {
     margin-left: 0;
     a,
