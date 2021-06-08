@@ -81,8 +81,9 @@
 }
 
 .card-deck.dashboard-card-deck {
-    margin-top: 1rem;
     .dashboard-card {
+        margin-top: .7rem;
+        margin-bottom: .7rem;
         .dashboard-card-img {
             border-radius: 12px 12px 0 0;
         }

@@ -67,7 +67,9 @@
                 </section>
                 {{#hasblocks}}
                     <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
-                        <a id="hide-blocks" class="btn btn-outline-primary" href="#">{{#str}}hideblocks, theme_fnde{{/str}}</a>
+                        <div class="d-inline-block w-100">
+                            <a id="hide-blocks" class="btn btn-outline-primary" href="#">{{#str}}hideblocks, theme_fnde{{/str}}</a>
+                        </div>
                         {{{ sidepreblocks }}}
                     </section>
                 {{/hasblocks}}

@@ -10,8 +10,11 @@ body.format-board #region-main {
         margin-bottom: 20px;
         padding: 1.5rem;
         h3.sectionname {
-            color: $brand-01;
-            font-weight: 600;
+            margin-bottom: 1rem;
+            a {
+                color: $brand-01;
+                font-weight: 600;
+            }
         }
     }
     li#section-0 {
@@ -48,15 +51,15 @@ body.format-tiles #region-main {
                 color: $brand-01;
                 font-weight: 600;
             }
-            .tile-text {
-                height: auto;
-                min-height: 40px;
-            }
         }
     }
-    .tileiconcontainer .icon.fa {
-        color: $brand-02;
-        font-size: 40px;
+    .tileiconcontainer .icon {
+        height: 40px;
+        width: 40px;
+        &.fa {
+            color: $brand-02;
+            font-size: 40px;
+        }
     }
 }
 
