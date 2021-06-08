@@ -20,7 +20,7 @@
                 font-size: 0.85rem;
                 text-decoration: none;
                 &:hover {
-                    color: $brand-link;
+                    color: rgba($white, .5);
                 }
             }
         }
@@ -28,7 +28,7 @@
     .social-links {
         float: right;
         a {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin: 0 1rem;
             text-decoration: none;
             &:hover {

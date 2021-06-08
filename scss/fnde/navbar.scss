@@ -1,11 +1,8 @@
 .navbar {
     background-color: $brand-02;
-    padding-left: $regular-margin;
-    padding-right: $regular-margin;
+    min-height: 50px;
+    padding: 0 $regular-margin;
     .dropdown .dropdown-menu {
-        border: 1px solid $brand-border-01;
-        border-radius: 8px;
-        box-shadow: $box-shadow;
         top: 30px;
         .dropdown-item {
             color: $brand-info;
@@ -39,13 +36,46 @@
         width: 100%;
     }
     .usernav {
+        margin-top: 4px;
         margin-right: 0;
         .avatars {
             float: left;
+            .avatar.current {
+                background-image: url([[pix:theme|icon-usermenu]]);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                height: 20px;
+                margin-right: 10px;
+                width: 20px;
+                img {
+                    display: none;
+                }
+            }
         }
-        .usermenu .dropdown-toggle {
-            color: $white;
-            padding-right: 0;
+        .usermenu {
+            .dropdown-toggle {
+                color: $white;
+                padding-right: 0;
+                &:hover {
+                    color: rgba($white, .5);
+                    .avatar.current {
+                        opacity: .5;
+                    }
+                    .usertext {
+                        color: rgba($white, .5);
+                    }
+                }
+            }
+            .login {
+                color: $white;
+                font-size: .8rem;
+                a {
+                    color: $white;
+                    font-weight: 600;
+                }
+            }
         }
         .usertext {
             color: $white;
@@ -58,10 +88,33 @@
         }
     }
 }
-.navbar-expand .navbar-nav .nav-link {
-    color: $white;
-    &:hover {
-        color: $brand-01;
+.navbar-expand .navbar-nav {
+    .nav-link {
+        color: $white;
+        &:hover {
+            color: rgba($white, .5);
+        }
+    }
+    &.mainmenu .nav-link {
+        font-size: .9rem;
+        line-height: 50px;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        min-height: 50px;
+        padding: 0;
+        position: relative;
+        &:hover {
+            color: $white;
+            &:before {
+                background-color: $white;
+                content: "";
+                height: 4px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
     }
 }
 .navbar-brand {
@@ -69,7 +122,11 @@
     font-weight: 900;
     text-transform: uppercase;
     &:hover {
-        color: $brand-01;
+        color: $white;
+        opacity: .5;
+    }
+    + .navbar-nav {
+        float: right;
     }
 }
 [data-action="toggle-drawer"] {
@@ -77,6 +134,36 @@
     .icon {
         color: $gray-300;
     }
+    &:hover {
+        background-color: transparent;
+        .icon {
+            color: rgba($white, .5);
+        }
+    }
+}
+
+.popover-region-notifications,
+[data-region="popover-region-messages"] {
+    .icon {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-family: inherit;
+        &:before {
+            display: none;
+        }
+    }
+    .popover-region-toggle:hover {
+        opacity: .5;
+    }
+}
+
+[data-region="popover-region-messages"] .icon {
+    background-image: url([[pix:theme|icon-messages]]);
+}
+
+.popover-region-notifications .icon {
+    background-image: url([[pix:theme|icon-notifications]]);
 }
 
 @media (max-width: 1000px) {

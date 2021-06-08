@@ -2,11 +2,15 @@ body {
     background-color: $brand-02;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "Roboto";
+    font-family: "Source Sans Pro";
 }
 
 a {
     color: $brand-link;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
     &:hover {
         color: $gray-900;
     }
@@ -92,8 +96,8 @@ a {
 .card {
     @extend %card-style;
     .card-title {
-        font-size: 1rem;
-        font-weight: 400;
+        font-size: 1.1rem;
+        font-weight: 500;
         + .card-text {
             border-top: 1px solid $gray-300;
             padding-top: 1rem;
@@ -104,6 +108,21 @@ a {
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
     padding-right: $regular-margin;
     padding-left: $regular-margin;
+}
+
+.dropdown-menu {
+    border: 1px solid $brand-border-01;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+}
+
+.filter-group {
+    .btn.icon-no-margin {
+        color: $white;
+    }
+    [data-filterregion="actions"] .btn {
+        color: $white !important;
+    }
 }
 
 .message-app .btn.btn-link.btn-icon {
@@ -153,10 +172,13 @@ a {
     margin-left: .5rem;
 }
 
-.simplesearchform .btn-submit {
-    background-color: $brand-02;
-    color: $white;
-    border-radius: 0 8px 8px 0;
+.simplesearchform {
+    .btn-submit,
+    .input-group-append .btn {
+        background-color: $brand-02;
+        color: $white;
+        border-radius: 0 8px 8px 0;
+    }
 }
 
 h2 + .singlebutton {
