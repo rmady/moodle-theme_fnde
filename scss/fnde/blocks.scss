@@ -1,5 +1,10 @@
-#page .block {
-
+#block-region-content {
+    .block.card > .card-body.p-3 {
+        padding: 1.5rem !important;
+    }
+    .card .card-title {
+        font-size: 1.5rem;
+    }
 }
 .block-region {
     .block.card {
@@ -8,4 +13,71 @@
 }
 .block_tree .tree_item.branch {
     margin-left: 0;
+}
+.block {
+    .block-cards .course-info-container {
+        padding: 1.25rem !important;
+        .dropdown .btn.btn-link.btn-icon {
+            background-color: $gray-200;
+            &:hover {
+                background-color: $gray-300;
+            }
+        }
+        .text-truncate {
+            overflow: unset;
+            text-overflow: unset;
+            white-space: unset;
+            .coursename {
+                color: $gray-800;
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 1em;
+            }
+            .text-muted {
+                line-height: 1.2em;
+            }
+        }
+    }
+    .block-cards .progress {
+        background-color: $gray-300 !important;
+        border: 0 none !important;
+        border-radius: 15px;
+        .progress-bar {
+            background-color: $brand-03;
+            border-radius: 15px;
+        }
+        + .small {
+            color: $gray-600;
+            margin-top: .25rem;
+        }
+    }
+    .calendar-controls .current {
+        font-size: 1.1rem;
+        a {
+            color: $gray-800;
+        }
+    }
+    .minicalendar {
+        max-width: 100%;
+        td,
+        th {
+            border: 0 none;
+            font-size: .9rem;
+            padding: .5rem;
+            &.today {
+                padding: 0;
+                a {
+                    background-color: $brand-03;
+                    border-radius: 50%;
+                    color: $white;
+                    display: inline-block;
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                    height: 34px;
+                    line-height: 34px;
+                    width: 34px;
+                }
+            }
+        }
+    }
 }
