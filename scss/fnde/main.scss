@@ -172,10 +172,13 @@ a {
     margin-left: .5rem;
 }
 
-.simplesearchform .btn-submit {
-    background-color: $brand-02;
-    color: $white;
-    border-radius: 0 8px 8px 0;
+.simplesearchform {
+    .btn-submit,
+    .input-group-append .btn {
+        background-color: $brand-02;
+        color: $white;
+        border-radius: 0 8px 8px 0;
+    }
 }
 
 h2 + .singlebutton {

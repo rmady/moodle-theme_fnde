@@ -1,9 +1,67 @@
+
+body.format-board #region-main {
+    box-shadow: 0 0 0;
+    background-color: transparent;
+    padding: 0;
+    .board > .section {
+        background-color: $white;
+        border-radius: 12px;
+        box-shadow: $box-shadow;
+        margin-bottom: 20px;
+        padding: 1.5rem;
+        h3.sectionname {
+            color: $brand-01;
+            font-weight: 600;
+        }
+    }
+    li#section-0 {
+        margin: 0 20px 20px;
+    }
+}
+
+body.format-tiles #region-main {
+    box-shadow: 0 0 0;
+    background-color: transparent;
+    padding: 0;
+    .buttonhidesec0 {
+        background-color: transparent;
+    }
+    .completionhelp .btn {
+        background-color: transparent;
+        padding: 0;
+    }
+    .course-content ul.tiles {
+        li.section#section-0 {
+            background-color: transparent;
+        }
+        .tile {
+            background-color: $white !important;
+            border: 1px solid $brand-border-02;
+            border-left: 8px solid $red;
+            border-radius: 8px;
+            box-shadow: $box-shadow;
+            margin: .75rem;
+            a {
+                padding: 1.25rem;
+            }
+            h3 {
+                color: $brand-01;
+                font-weight: 600;
+            }
+            .tile-text {
+                height: auto;
+                min-height: 40px;
+            }
+        }
+    }
+    .tileiconcontainer .icon.fa {
+        color: $brand-02;
+        font-size: 40px;
+    }
+}
+
 body.format-topics {
     .togglecompletion .btn.btn-link {
         background-color: transparent;
     }
-}
-
-body.format-tiles {
-
 }
