@@ -24,9 +24,6 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    // Must add the page after definiting all the settings!
-    $settings->add($page);
-
     // Raw SCSS to include before the content.
     $setting = new admin_setting_scsscode('theme_fnde/scsspre',
         get_string('rawscsspre', 'theme_fnde'), get_string('rawscsspre_desc', 'theme_fnde'), '', PARAM_RAW);
