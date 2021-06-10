@@ -38,6 +38,9 @@ a {
 
 #region-main-box {
     padding: 0;
+    &.blocks-column-collapsed [data-region="blocks-column"] {
+        display: none;
+    }
 }
 
 #region-main {
@@ -53,8 +56,10 @@ a {
     border-radius: 8px;
     box-shadow: $box-shadow;
     color: $brand-02;
-    float: right;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    position: absolute;
+    right: 0;
+    z-index: 1;
     &:hover {
         background-color: $brand-02;
         color: $white;
@@ -226,6 +231,23 @@ h2 + .singlebutton {
 
 #page-my-index {
     background-color: $gray-100;
+    #block-region-content > section.block.card,
+    div[role="main"] + section.block.card {
+        background-color: transparent;
+        box-shadow: 0 0 0;
+        > .card-body {
+            padding: 0 !important;
+            > .card-title {
+                display: inline-block !important;
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+            > .card-text {
+                @extend %card-style;
+                padding: 1.25rem;
+            }
+        }
+    }
 }
 
 // Rounded user pictures
