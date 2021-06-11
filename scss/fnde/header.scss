@@ -1,3 +1,4 @@
+// Cabeçalho.
 #page-header {
     background-color: $brand-01;
     margin: 0 0 1.5rem;
@@ -31,6 +32,7 @@
     }
 }
 
+// Mobile.
 @media (max-width: 1000px) {
     #page-header {
         .card {

@@ -36,5 +36,13 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    // Favicon image setting.
+    $name = 'theme_fnde/favicon';
+    $title = get_string('favicon', 'theme_fnde');
+    $description = get_string('favicon_desc', 'theme_fnde');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'favicon');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     $settings->add($page);
 }
