@@ -107,7 +107,7 @@
         color: $gray-600;
         display: block;
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1em;
         padding: .5rem;
     }
@@ -127,6 +127,9 @@
     }
 }
 
+.block .block-cards .course-info-container .text-truncate .coursename {
+    font-weight: 500;
+}
 
 #hide-blocks:hover {
     &:after {

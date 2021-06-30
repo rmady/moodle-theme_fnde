@@ -26,6 +26,9 @@ body.format-tiles #region-main {
     box-shadow: 0 0 0;
     background-color: transparent;
     padding: 0;
+    .sectiontitle h2 {
+        font-weight: 500;
+    }
     .buttonhidesec0 {
         background-color: transparent;
     }
@@ -51,7 +54,7 @@ body.format-tiles #region-main {
             h3 {
                 color: $brand-01;
                 font-size: 1.2rem;
-                font-weight: 600;
+                font-weight: 500;
             }
         }
     }
