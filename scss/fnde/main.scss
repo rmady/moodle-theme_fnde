@@ -38,8 +38,13 @@ a {
 
 #region-main-box {
     padding: 0;
-    &.blocks-column-collapsed [data-region="blocks-column"] {
-        display: none;
+    &.blocks-column-collapsed {
+        #region-main {
+            padding-top: 3rem;
+        }
+        [data-region="blocks-column"] {
+            display: none;
+        }
     }
 }
 
@@ -229,23 +234,23 @@ h2 + .singlebutton {
     }
 }
 
-#page-my-index {
-    background-color: $gray-100;
-    #block-region-content > section.block.card,
-    div[role="main"] + section.block.card {
+#page-course-index-category {
+    #region-main {
         background-color: transparent;
         box-shadow: 0 0 0;
-        > .card-body {
-            padding: 0 !important;
-            > .card-title {
-                display: inline-block !important;
-                margin-top: 1rem;
-                margin-bottom: 0;
-            }
-            > .card-text {
-                @extend %card-style;
-                padding: 1.25rem;
-            }
+        overflow: inherit;
+        padding: 0;
+    }
+    .region_main_settings_menu_proxy {
+        background-color: transparent;
+    }
+    form.simplesearchform {
+        @extend %card-style;
+        margin-bottom: 1rem;
+        padding: .75rem;
+        .form-control {
+            border-color: $brand-border-03;
+            border-radius: 8px 0 0 8px;
         }
     }
 }

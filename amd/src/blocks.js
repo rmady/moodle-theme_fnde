@@ -19,5 +19,10 @@
             }
             return false;
         });
+        if ($("body#page-course-index-category").length) {
+            $("#region-main-box").addClass("blocks-column-collapsed");
+            $("#region-main").removeClass("has-blocks");
+            $("#hide-blocks").text("Exibir blocos");
+        }
     });
 });
