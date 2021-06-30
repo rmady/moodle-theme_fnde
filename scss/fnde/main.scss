@@ -38,8 +38,13 @@ a {
 
 #region-main-box {
     padding: 0;
-    &.blocks-column-collapsed [data-region="blocks-column"] {
-        display: none;
+    &.blocks-column-collapsed {
+        #region-main {
+            padding-top: 3rem;
+        }
+        [data-region="blocks-column"] {
+            display: none;
+        }
     }
 }
 
