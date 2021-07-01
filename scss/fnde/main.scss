@@ -274,3 +274,12 @@ h2 + .singlebutton {
     }
 }
 
+// Login
+.pagelayout-login {
+    #region-main {
+        box-shadow: none;
+    }
+    #page-footer {
+        display: none;
+    }
+}

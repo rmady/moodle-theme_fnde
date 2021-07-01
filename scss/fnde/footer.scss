@@ -43,6 +43,9 @@
             text-align: right;
         }
     }
+    #moodle-info {
+        display: none;
+    }
 }
 
 #goto-top-link {
@@ -61,11 +64,17 @@
 }
 
 @media (max-width: 800px) {
-    #page-footer .social-links {
-        float: left;
-        +p {
-            clear: left;
-            text-align: left;
+    #page-footer {
+        .social-links {
+            float: left;
+
+            + p {
+                clear: left;
+                text-align: left;
+            }
+        }
+        #moodle-info {
+            display: block;
         }
     }
 }

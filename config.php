@@ -86,7 +86,7 @@ $THEME->layouts = [
     'login' => array(
         'file' => 'login.php',
         'regions' => array(),
-        'options' => array('langmenu' => true),
+        'options' => array('nofooter' => true, 'langmenu' => true),
     ),
 
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
