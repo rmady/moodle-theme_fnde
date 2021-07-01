@@ -60,6 +60,10 @@
     }
 }
 
+#page-course-index-category .courses .card-deck.row {
+    justify-content: left;
+}
+
 .card-deck.dashboard-card-deck {
     justify-content: center !important;
     .dashboard-card {
