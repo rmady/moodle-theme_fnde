@@ -73,3 +73,10 @@ body.format-topics {
         background-color: transparent;
     }
 }
+
+@media (max-width: 600px) {
+    .format-tiles ul.tiles#multi_section_tiles,
+    .format-tiles .course-content ul.tiles .tile {
+        max-width: 100% !important;
+    }
+}

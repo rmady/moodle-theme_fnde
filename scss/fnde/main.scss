@@ -257,7 +257,7 @@ h2 + .singlebutton {
 
 // Rounded user pictures
 .userpicture {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 // Mobile.
@@ -271,6 +271,12 @@ h2 + .singlebutton {
     .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
         padding-right: $min-width-margin;
         padding-left: $min-width-margin;
+    }
+}
+
+@media (max-width: 600px) {
+    #hide-blocks {
+        display: none;
     }
 }
 
