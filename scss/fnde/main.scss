@@ -38,10 +38,10 @@ a {
 
 #region-main-box {
     padding: 0;
+    #region-main {
+        margin-top: 3.8rem;
+    }
     &.blocks-column-collapsed {
-        #region-main {
-            padding-top: 3rem;
-        }
         [data-region="blocks-column"] {
             display: none;
         }
@@ -65,6 +65,10 @@ a {
     position: absolute;
     right: 0;
     z-index: 1;
+    &:focus {
+        box-shadow: 0 0 0 transparent;
+        outline: 0 none;
+    }
     &:hover {
         background-color: $brand-02;
         color: $white;

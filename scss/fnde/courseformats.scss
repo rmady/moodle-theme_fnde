@@ -3,6 +3,13 @@ body.format-board #region-main {
     box-shadow: 0 0 0;
     background-color: transparent;
     padding: 0;
+    .path-course-view .completionprogress {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        .btn {
+            margin-left: .25rem;
+        }
+    }
     .board > .section {
         background-color: $white;
         border-radius: 12px;
