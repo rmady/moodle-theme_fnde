@@ -44,7 +44,6 @@
 }
 
 .courses .card-deck.row {
-    justify-content: center;
     .course-card-view {
         flex-basis: 238px !important;
         flex-grow: 0 !important;
@@ -65,7 +64,6 @@
 }
 
 .card-deck.dashboard-card-deck {
-    justify-content: center !important;
     .dashboard-card {
         flex-basis: 238px;
         margin-top: .7rem;

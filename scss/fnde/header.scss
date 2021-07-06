@@ -28,6 +28,7 @@
     }
     .page-header-headings h1 {
         color: $white;
+        font-size: 2.1rem;
         font-weight: 600;
     }
 }
@@ -37,8 +38,15 @@
     #page-header {
         .card {
             .card-body {
-                padding: 1.25rem calc($min-width-margin - 15px);
+                padding: 1rem calc(1.5rem - 15px);
             }
         }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .breadcrumb:not(:empty) {
+        border: 0 none;
+        padding: 0;
     }
 }
