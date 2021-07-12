@@ -44,5 +44,50 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    // HTML to include in the footer content of frontpage.
+    $footerhtml = '<div class="d-flex flex-wrap">
+            <div class="flex-item">
+                <h3>AVA/FNDE</h3>
+                <ul>
+                    <li><a href="#">Cursos disponíveis</a></li>
+                    <li><a href="#">Meus cursos</a></li>
+                    <li><a href="#">Alterar dados cadastrais</a></li>
+                    <li><a href="#">Upload de arquivos</a></li>
+                    <li><a href="#">Certificados</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-item">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li><a href="https://www.gov.br/fnde/pt-br" target="_blank">Portal FNDE</a></li>
+                    <li><a href="https://www.fnde.gov.br/educacaocorporativa/" target="_blank">Portal Educação Corporativa</a></li>
+                    <li><a href="https://www.fnde.gov.br/ava/" target="_blank">AVA/FNDE</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-item flex-grow-1">
+                <div class="social-links">
+                    <a class="social-item" target="_blank" href="https://www.facebook.com/fnde.educacao">
+                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a class="social-item" target="_blank" href="https://www.youtube.com/channel/UCp3JfOII-BSbHqlijmUWg7A">
+                        <span class="fa fa-youtube" aria-hidden="true"></span>
+                        <span class="sr-only">Youtube</span>
+                    </a>
+                    <a class="social-item" target="_blank" href="https://www.instagram.com/fnde.oficial/">
+                        <span class="fa fa-instagram" aria-hidden="true"></span>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </div>
+                <p>&copy; FNDE. Todos os direitos reservados.</p>
+            </div>
+        </div>';
+    $setting = new admin_setting_confightmleditor('theme_fnde/defaultfooter', get_string('defaultfooter', 'theme_fnde'),
+        get_string('defaultfooter_desc', 'theme_fnde'), $footerhtml, PARAM_RAW);
+    $page->add($setting);
+
+
     $settings->add($page);
 }

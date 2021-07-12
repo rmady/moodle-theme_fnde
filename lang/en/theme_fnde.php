@@ -40,4 +40,6 @@ $string['totop'] = 'Go to top';
 $string['hideblocks'] = 'Ocultar blocos';
 $string['courses'] = 'Catálogo de cursos';
 $string['my'] = 'Meu Painel';
+$string['defaultfooter'] = 'Rodapé padrão';
+$string['defaultfooter_desc'] = 'Rodapé padrão, informações que aparecem na parte debaixo do site.';
 

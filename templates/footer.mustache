@@ -10,65 +10,22 @@
 
 <footer id="page-footer" class="py-6 text-light">
     <div class="container-fluid">
-        <div class="d-flex flex-wrap">
-            <div class="flex-item">
-                <h3>AVA/FNDE</h3>
-                <ul>
-                    <li><a href="#">Cursos disponíveis</a></li>
-                    <li><a href="#">Meus cursos</a></li>
-                    <li><a href="#">Alterar dados cadastrais</a></li>
-                    <li><a href="#">Upload de arquivos</a></li>
-                    <li><a href="#">Certificados</a></li>
-                </ul>
-            </div>
+        {{{footer}}}
+        <div id="moodle-info" class="flex-item">
+            <div id="course-footer">{{{ output.course_footer }}}</div>
 
-            <div class="flex-item">
-                <h3>Links úteis</h3>
-                <ul>
-                    <li><a href="#">Portal FNDE</a></li>
-                    <li><a href="#">Portal Educação Corporativa</a></li>
-                    <li><a href="#">AVA/FNDE</a></li>
-                </ul>
-            </div>
-
-            <div id="moodle-info" class="flex-item">
-                <div id="course-footer">{{{ output.course_footer }}}</div>
-
-                {{{ output.login_info }}}
-                <div class="tool_usertours-resettourcontainer"></div>
-                {{{ output.home_link }}}
-                <nav class="nav navbar-nav d-md-none" aria-label="{{#str}}custommenu, admin{{/str}}">
-                    {{# output.custom_menu_flat }}
-                        <ul class="list-unstyled pt-3">
-                            {{> theme_boost/custom_menu_footer }}
-                        </ul>
-                    {{/ output.custom_menu_flat }}
-                </nav>
-                {{{ output.standard_footer_html }}}
-                {{{ output.standard_end_of_body_html }}}
-            </div>
-
-            <div class="flex-item flex-grow-1">
-                <div class="social-links">
-                    <a class="social-item" href="#">
-                        <span class="fa fa-facebook" aria-hidden="true"></span>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                    <a class="social-item" href="#">
-                        <span class="fa fa-youtube" aria-hidden="true"></span>
-                        <span class="sr-only">Youtube</span>
-                    </a>
-                    <a class="social-item" href="#">
-                        <span class="fa fa-twitter" aria-hidden="true"></span>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                    <a class="social-item" href="#">
-                        <span class="fa fa-instagram" aria-hidden="true"></span>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </div>
-                <p>&copy; FNDE. Todos os direitos reservados.</p>
-            </div>
+            {{{ output.login_info }}}
+            <div class="tool_usertours-resettourcontainer"></div>
+            {{{ output.home_link }}}
+            <nav class="nav navbar-nav d-md-none" aria-label="{{#str}}custommenu, admin{{/str}}">
+                {{# output.custom_menu_flat }}
+                    <ul class="list-unstyled pt-3">
+                        {{> theme_boost/custom_menu_footer }}
+                    </ul>
+                {{/ output.custom_menu_flat }}
+            </nav>
+            {{{ output.standard_footer_html }}}
+            {{{ output.standard_end_of_body_html }}}
         </div>
     </div>
 </footer>
