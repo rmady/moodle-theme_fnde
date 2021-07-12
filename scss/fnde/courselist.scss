@@ -59,6 +59,15 @@
     }
 }
 
+#page-course-index-category {
+    .form-inline .input-group {
+        width: 100%;
+    }
+    .course_category_tree .category.with_children>.info>.categoryname {
+        border-top: 1px solid rgb(128, 128, 128, 0.2);
+    }
+}
+
 #page-course-index-category .courses .card-deck.row {
     justify-content: left;
 }

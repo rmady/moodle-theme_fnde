@@ -81,6 +81,10 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $header->headeractions = $this->page->get_header_actions();
 
         if (in_array($this->page->pagelayout, ['mydashboard'])) {
+            $header->title = get_string('my', 'theme_fnde');
+            return $this->render_from_template('theme_fnde/header', $header);
+        } else if (in_array($this->page->pagelayout, ['coursecategory'])) {
+            $header->title = get_string('courses', 'theme_fnde');
             return $this->render_from_template('theme_fnde/header', $header);
         } else {
             return $this->render_from_template('core/full_header', $header);

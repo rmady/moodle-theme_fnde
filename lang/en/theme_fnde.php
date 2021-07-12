@@ -38,4 +38,6 @@ $string['privacy:drawernavopen'] = 'The current preference for the navigation dr
 $string['totop'] = 'Go to top';
 
 $string['hideblocks'] = 'Ocultar blocos';
+$string['courses'] = 'Catálogo de cursos';
+$string['my'] = 'Meu Painel';
 
