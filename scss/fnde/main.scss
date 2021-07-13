@@ -55,26 +55,6 @@ a {
     }
 }
 
-#hide-blocks {
-    background-color: $white;
-    border: 1px solid $brand-02;
-    border-radius: 8px;
-    box-shadow: $box-shadow;
-    color: $brand-02;
-    margin-bottom: 1.2rem;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    &:focus {
-        box-shadow: 0 0 0 transparent;
-        outline: 0 none;
-    }
-    &:hover {
-        background-color: $brand-02;
-        color: $white;
-    }
-}
-
 .breadcrumb {
     margin-left: 0;
     a,
@@ -93,6 +73,12 @@ a {
         background-color: $brand-link;
         color: $white;
     }
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+    box-shadow: 0 2px 10px 2px rgb(0 0 0 / 20%);
+    outline: 0 none;
 }
 
 // Reset the default styling back to the bootstrap defaults for
@@ -251,7 +237,7 @@ h2 + .singlebutton {
     form.simplesearchform {
         @extend %card-style;
         margin-bottom: 1rem;
-        padding: .75rem;
+        padding: 1rem;
         .form-control {
             border-color: $brand-border-03;
             border-radius: 8px 0 0 8px;
@@ -275,12 +261,6 @@ h2 + .singlebutton {
     .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
         padding-right: $min-width-margin;
         padding-left: $min-width-margin;
-    }
-}
-
-@media (max-width: 600px) {
-    #hide-blocks {
-        display: none;
     }
 }
 

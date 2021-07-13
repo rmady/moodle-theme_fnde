@@ -22,4 +22,38 @@
             }
         }
     }
+    .block-myoverview.block-cards [data-region="courses-view"] {
+        &[data-display="list"],
+        &[data-display="summary"] {
+            .btn.btn-link.btn-icon {
+                background-color: $gray-200;
+                &:active,
+                &:hover {
+                    background-color: $gray-300;
+                }
+            }
+        }
+        &[data-display="list"] {
+            .list-group {
+                margin-top: 1rem;
+                width: 100%;
+                .list-group-item:first-child {
+                    border-radius: $border-radius $border-radius 0 0;
+                }
+                .list-group-item:last-child {
+                    border-radius: 0 0 $border-radius $border-radius;
+                }
+            }
+        }
+        &[data-display="summary"] {
+            .course-summaryitem {
+                border-radius: $border-radius;
+                margin-top: 1rem;
+                padding: 1rem !important;
+            }
+            .summaryimage {
+                margin-right: 1rem !important;
+            }
+        }
+    }
 }

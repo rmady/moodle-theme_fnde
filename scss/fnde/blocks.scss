@@ -114,16 +114,36 @@
 }
 
 #hide-blocks {
-    padding-right: 2rem;
-    &:after {
+    background-color: $white;
+    border: 1px solid $brand-02;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+    color: $brand-02;
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    &::before {
         content: '';
         background-image: url([[pix:theme|hideblocks]]);
         background-repeat: no-repeat;
         height: 16px;
         width: 16px;
         position: absolute;
+        left: 0.75rem;
         margin-top: 6px;
-        margin-left: 5px;
+    }
+    &:focus {
+        box-shadow: 0 0 0 transparent;
+        outline: 0 none;
+    }
+    &:hover {
+        background-color: $brand-02;
+        color: $white;
+        &::before {
+            filter: brightness(0) invert(1);
+        }
     }
 }
 
@@ -131,8 +151,8 @@
     font-weight: 500;
 }
 
-#hide-blocks:hover {
-    &:after {
-        filter: brightness(0) invert(1);
+@media (max-width: 600px) {
+    #hide-blocks {
+        display: none;
     }
 }
