@@ -1,31 +1,45 @@
 
-body.format-board #region-main {
-    box-shadow: 0 0 0;
-    background-color: transparent;
-    padding: 0;
-    .path-course-view .completionprogress {
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        .btn {
-            margin-left: .25rem;
+body.format-board {
+    &.path-course-view {
+        li.activity form.togglecompletion .btn {
+            background-color: $gray-200;
+            padding: .25rem .5rem .45rem;
+            img {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: $gray-300;
+            }
         }
-    }
-    .board > .section {
-        background-color: $white;
-        border-radius: 12px;
-        box-shadow: $box-shadow;
-        margin-bottom: 20px;
-        padding: 1.5rem;
-        h3.sectionname {
+        .completionprogress {
+            margin-right: 1rem;
             margin-bottom: 1rem;
-            a {
-                color: $brand-01;
-                font-weight: 600;
+            .btn {
+                margin-left: .25rem;
             }
         }
     }
-    li#section-0 {
-        margin: 0 20px 20px;
+    #region-main {
+        box-shadow: 0 0 0;
+        background-color: transparent;
+        padding: 0;
+        .board > .section {
+            background-color: $white;
+            border-radius: 12px;
+            box-shadow: $box-shadow;
+            margin-bottom: 20px;
+            padding: 1.5rem;
+            h3.sectionname {
+                margin-bottom: 1rem;
+                a {
+                    color: $brand-01;
+                    font-weight: 600;
+                }
+            }
+        }
+        li#section-0 {
+            margin: 0 20px 20px;
+        }
     }
 }
 

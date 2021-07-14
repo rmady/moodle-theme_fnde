@@ -211,7 +211,7 @@ class course_renderer extends \core_course_renderer {
 
         // Display course contacts. See core_course_list_element::get_course_contacts().
         if ($course->has_course_contacts()) {
-            $content .= html_writer::start_tag('div', array('class' => 'teachers px-3 pt-2 pb-4'));
+            $content .= html_writer::start_tag('div', array('class' => 'teachers px-4 pt-2 pb-4'));
             $content .= html_writer::start_tag('ul', array('class' => 'list-unstyled m-0 font-weight-light'));
             foreach ($course->get_course_contacts() as $userid => $coursecontact) {
                 $name = $coursecontact['rolename'].': '.

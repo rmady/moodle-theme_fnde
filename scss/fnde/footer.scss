@@ -20,6 +20,9 @@
             a {
                 font-size: 0.85rem;
                 text-decoration: none;
+                &:focus {
+                    color: $brand-link;
+                }
                 &:hover {
                     color: rgba($white, .5);
                 }
