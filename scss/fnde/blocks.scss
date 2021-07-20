@@ -28,7 +28,8 @@
         .dropdown .btn.btn-link.btn-icon {
             background-color: $gray-200;
             &:hover {
-                background-color: $gray-300;
+                background-color: $gray-600;
+                color: $white;
             }
         }
         .text-truncate {
@@ -38,7 +39,7 @@
             .coursename {
                 color: $gray-800;
                 font-size: 1.25rem;
-                font-weight: 700;
+                font-weight: 500;
                 line-height: 1em;
             }
             .text-muted {
@@ -145,10 +146,6 @@
             filter: brightness(0) invert(1);
         }
     }
-}
-
-.block .block-cards .course-info-container .text-truncate .coursename {
-    font-weight: 500;
 }
 
 @media (max-width: 600px) {
