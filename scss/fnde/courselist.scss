@@ -60,16 +60,36 @@
 }
 
 #page-course-index-category {
+    #region-main {
+        background-color: transparent;
+        box-shadow: 0 0 0;
+        overflow: inherit;
+        padding: 0;
+    }
+    .course_category_tree .category.with_children > .info > .categoryname {
+        border-top: 1px solid rgb(128, 128, 128, 0.2);
+    }
+    .courses .card-deck.row {
+        justify-content: left;
+    }
     .form-inline .input-group {
         width: 100%;
     }
-    .course_category_tree .category.with_children>.info>.categoryname {
-        border-top: 1px solid rgb(128, 128, 128, 0.2);
+    .region_main_settings_menu_proxy {
+        background-color: transparent;
     }
-}
-
-#page-course-index-category .courses .card-deck.row {
-    justify-content: left;
+    form.simplesearchform {
+        @extend %card-style;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        .form-control {
+            border-color: $brand-border-03;
+            border-radius: 8px 0 0 8px;
+        }
+    }
+    &.not_siteadmin #region-main-settings-menu > div {
+        display: none;
+    }
 }
 
 .card-deck.dashboard-card-deck {
@@ -98,6 +118,11 @@ body#page-enrol-index {
 }
 
 @media (min-width: 576px) {
+    #page-course-index-category #region-main-settings-menu > div {
+        margin: 0;
+        right: -220px;
+        top: 5px;
+    }
     .card-deck {
         margin-right: -.7rem;
         margin-left: -.7rem;

@@ -23,12 +23,16 @@ body.format-board {
         box-shadow: 0 0 0;
         background-color: transparent;
         padding: 0;
-        .board > .section {
+        .board {
             background-color: $white;
             border-radius: 12px;
             box-shadow: $box-shadow;
-            margin-bottom: 20px;
-            padding: 1.5rem;
+            margin: 20px !important;
+            padding: 1.5rem !important;
+            > .section {
+                margin: 0;
+                width: 100%;
+            }
             h3.sectionname {
                 margin-bottom: 1rem;
                 a {
@@ -39,6 +43,36 @@ body.format-board {
         }
         li#section-0 {
             margin: 0 20px 20px;
+        }
+    }
+    .course-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -20px;
+        > * {
+            flex-grow: 1;
+            flex-basis: 50%;
+        }
+        ul.board {
+            &.width100 {
+                flex-basis: 100%;
+            }
+            &.width75 {
+                flex-basis: calc(75% - 40px);
+            }
+            &.width66 {
+                flex-basis: calc(66.666666666% - 40px);
+            }
+            &.width50 {
+                flex-basis: calc(50% - 40px);
+            }
+            &.width33 {
+                flex-basis: calc(33.333333333% - 40px);
+            }
+            &.width25 {
+                flex-basis: calc(25% - 40px);
+            }
         }
     }
 }
