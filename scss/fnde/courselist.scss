@@ -94,6 +94,7 @@
 
 .card-deck.dashboard-card-deck {
     .dashboard-card {
+        display: inline-block;
         flex-basis: 238px;
         margin-top: .7rem;
         margin-bottom: .7rem;
