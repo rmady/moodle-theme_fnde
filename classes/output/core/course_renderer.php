@@ -209,20 +209,7 @@ class course_renderer extends \core_course_renderer {
 
         $content .= html_writer::end_tag('div'); // End card-block.
 
-        // Display course contacts. See core_course_list_element::get_course_contacts().
-        if ($course->has_course_contacts()) {
-            $content .= html_writer::start_tag('div', array('class' => 'teachers px-4 pt-2 pb-4'));
-            $content .= html_writer::start_tag('ul', array('class' => 'list-unstyled m-0 font-weight-light'));
-            foreach ($course->get_course_contacts() as $userid => $coursecontact) {
-                $name = $coursecontact['rolename'].': '.
-                    html_writer::link(new moodle_url('/user/view.php',
-                        array('id' => $userid, 'course' => SITEID)),
-                        $coursecontact['username']);
-                $content .= html_writer::tag('li', $name);
-            }
-            $content .= html_writer::end_tag('ul'); // End teachers.
-            $content .= html_writer::end_tag('div'); // End teachers.
-        }
+        // Don't display course contacts. See core_course_list_element::get_course_contacts().
 
         // Display course category if necessary (for example in search results).
         if ($chelper->get_show_courses() == self::COURSECAT_SHOW_COURSES_EXPANDED_WITH_CAT) {

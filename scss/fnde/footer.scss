@@ -46,8 +46,10 @@
             text-align: right;
         }
     }
-    #moodle-info {
+    #moodle-info,
+    .tool_dataprivacy {
         display: none;
+        margin-left: 0;
     }
 }
 
