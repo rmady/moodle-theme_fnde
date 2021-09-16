@@ -98,7 +98,7 @@ function theme_fnde_page_init(moodle_page $page) {
         $shortname   = trim($shortname[0]);
         $coursestyle = "/style/course/{$shortname}.css";
         if (file_exists($page->theme->dir.$coursestyle)) {
-            $page->requires->css(new moodle_url("/theme/trema{$coursestyle}"));
+            $page->requires->css(new moodle_url("/theme/fnde{$coursestyle}"));
         }
     }
 }

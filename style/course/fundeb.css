@@ -1,0 +1,74 @@
+body.format-tiles #region-main .course-content ul.tiles .tile {
+    border: 1px solid #e0e5eb;
+}
+
+body.format-tiles #region-main .course-content ul.tiles .tile h3 {
+    font-size: .9rem;
+    font-weight: normal;
+    line-height: 1;
+    background: transparent;
+    transition: all ease-in-out 500ms;
+}
+
+.format-tiles .course-content ul.tiles .tile.phototile .photo-tile-text {
+    max-width: 225px;
+    left: 10px;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li.tile {
+    background-position-x: center;
+    background-position-y: 50px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    max-height: 240px;
+    height: 240px;
+    transition: all ease-in-out 500ms;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li.tile:hover {
+    background-size: 150px;
+    background-position-y: bottom;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li.tile:hover h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li.tile:hover .photo-tile-text {
+    top: 30px;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-1 {
+    background-color: #b7e4e9 !important;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-2 {
+    background-color: #14b0bf !important;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-3,
+body.format-tiles #region-main .course-content ul.tiles li#tile-6 {
+    background-color: #213653 !important;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-3 h3,
+body.format-tiles #region-main .course-content ul.tiles li#tile-6 h3 {
+    color: white;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-4 {
+    background-color: #cc4339 !important;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-5 {
+    background-color: #93c8aa !important;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-7 {
+    background-color: #d7d7d7 !important;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-8 {
+    background-color: #409dc9 !important;
+}

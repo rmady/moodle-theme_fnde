@@ -23,6 +23,7 @@ body.format-board {
         box-shadow: 0 0 0;
         background-color: transparent;
         padding: 0;
+        padding-right: 15px;
         .board {
             background-color: $white;
             border-radius: 12px;
@@ -81,6 +82,7 @@ body.format-tiles #region-main {
     box-shadow: 0 0 0;
     background-color: transparent;
     padding: 0;
+    padding-right: 15px;
     .sectiontitle h2 {
         font-weight: 500;
     }
