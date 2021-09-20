@@ -6,6 +6,7 @@ body.format-tiles #region-main .course-content ul.tiles .tile h3 {
     font-size: .9rem;
     font-weight: normal;
     line-height: 1;
+    text-align: center;
     background: transparent;
     transition: all ease-in-out 500ms;
 }
@@ -13,6 +14,7 @@ body.format-tiles #region-main .course-content ul.tiles .tile h3 {
 .format-tiles .course-content ul.tiles .tile.phototile .photo-tile-text {
     max-width: 225px;
     left: 10px;
+    text-align: center;
 }
 
 body.format-tiles #region-main .course-content ul.tiles li.tile {
@@ -23,6 +25,7 @@ body.format-tiles #region-main .course-content ul.tiles li.tile {
     max-height: 240px;
     height: 240px;
     transition: all ease-in-out 500ms;
+    border-radius: 0;
 }
 
 body.format-tiles #region-main .course-content ul.tiles li.tile:hover {
@@ -31,12 +34,7 @@ body.format-tiles #region-main .course-content ul.tiles li.tile:hover {
 }
 
 body.format-tiles #region-main .course-content ul.tiles li.tile:hover h3 {
-    font-size: 1.2rem;
     margin-top: 1.5rem;
-}
-
-body.format-tiles #region-main .course-content ul.tiles li.tile:hover .photo-tile-text {
-    top: 30px;
 }
 
 body.format-tiles #region-main .course-content ul.tiles li#tile-1 {
@@ -47,18 +45,27 @@ body.format-tiles #region-main .course-content ul.tiles li#tile-2 {
     background-color: #14b0bf !important;
 }
 
-body.format-tiles #region-main .course-content ul.tiles li#tile-3,
+body.format-tiles #region-main .course-content ul.tiles li#tile-3 {
+    background-color: #85cbcb !important;
+}
+
 body.format-tiles #region-main .course-content ul.tiles li#tile-6 {
     background-color: #213653 !important;
 }
 
-body.format-tiles #region-main .course-content ul.tiles li#tile-3 h3,
 body.format-tiles #region-main .course-content ul.tiles li#tile-6 h3 {
     color: white;
 }
 
 body.format-tiles #region-main .course-content ul.tiles li#tile-4 {
-    background-color: #cc4339 !important;
+    background-color: white !important;
+    background-size: 160px;
+    background-position-y: 75px;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li#tile-4:hover {
+    background-size: 120px;
+    background-position-y: 115px;
 }
 
 body.format-tiles #region-main .course-content ul.tiles li#tile-5 {
@@ -66,7 +73,7 @@ body.format-tiles #region-main .course-content ul.tiles li#tile-5 {
 }
 
 body.format-tiles #region-main .course-content ul.tiles li#tile-7 {
-    background-color: #d7d7d7 !important;
+    background-color: #ff9899 !important;
 }
 
 body.format-tiles #region-main .course-content ul.tiles li#tile-8 {
