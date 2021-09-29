@@ -28,7 +28,13 @@ body.format-tiles #region-main .course-content ul.tiles li.tile {
     border-radius: 0;
 }
 
-body.format-tiles #region-main .course-content ul.tiles li.tile:hover {
+body.format-tiles #region-main .course-content ul.tiles li.tile.spacer {
+    max-height: 0;
+    height: 0;
+}
+
+body.format-tiles #region-main .course-content ul.tiles li.tile:hover,
+body.format-tiles #region-main .course-content ul.tiles li.tile.selected {
     background-size: 150px;
     background-position-y: bottom;
 }
@@ -63,7 +69,8 @@ body.format-tiles #region-main .course-content ul.tiles li#tile-4 {
     background-position-y: 75px;
 }
 
-body.format-tiles #region-main .course-content ul.tiles li#tile-4:hover {
+body.format-tiles #region-main .course-content ul.tiles li#tile-4:hover,
+body.format-tiles #region-main .course-content ul.tiles li#tile-4.selected {
     background-size: 120px;
     background-position-y: 115px;
 }
@@ -78,4 +85,100 @@ body.format-tiles #region-main .course-content ul.tiles li#tile-7 {
 
 body.format-tiles #region-main .course-content ul.tiles li#tile-8 {
     background-color: #409dc9 !important;
+}
+
+.format-tiles .sectionbutton {
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.format-tiles .sectionbutton .icon {
+    font-size: 1rem;
+    margin: 10px 3px 0 0;
+    width: 8px;
+    height: 8px;
+}
+
+.format-tiles .sectionbutton .icon.fa-close:before {
+    color: #c0392b;
+}
+
+.format-tiles .sectionbutton .icon.fa-pencil:before {
+    color: #2c3e50;
+}
+
+.format-tiles li.activity:focus {
+    outline: 1px dotted gainsboro;
+}
+
+.format-tiles .sectiontitle::after, .format-tiles .sectiontitle:after {
+    height: 2px;
+    background-color: rgba(69, 118, 156, .5);
+}
+
+
+/* Elementos do FNDE */
+
+.fnde-accordion .card-header {
+    padding: 0;
+}
+
+.fnde-accordion .btn.btn-link {
+    background-color: rgb(241, 241, 241);
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    text-align: left;
+    padding: .75rem 1.25rem;
+    border-radius: 0;
+    transition: all ease-in-out 250ms;
+}
+
+.fnde-accordion .btn.btn-link:hover,
+.fnde-accordion .btn.btn-link:hover a {
+    background-color: #196096;
+    color: white;
+    text-decoration: none;
+}
+
+.fnde-accordion .card-header button[aria-expanded="true"],
+.fnde-accordion .card-header button[aria-expanded="true"] a {
+    background-color: #a9a9a9;
+    color: black;
+}
+
+.fnde-accordion .card {
+    border-radius: 0;
+}
+
+.fnde-accordion .card-body .btn.btn-outline-primary {
+    background-color: #f1f1f1;
+    color: black;
+    border: 2px solid #042331;
+    border-radius: 0;
+    transition: all ease-in-out 250ms;
+}
+
+.fnde-accordion .card-body .btn.btn-outline-primary:hover {
+    background-color: #d2d2d2;
+}
+
+.fnde-accordion .collapse {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.fnde-accordion.tab {
+    margin: 1rem;
+}
+
+.fnde-accordion.tab .accordion-tab-header {
+    display: inline-block;
+    width: 30%;
+}
+
+.fnde-accordion.tab .accordion-tab-content {
+    float: right;
+    width: 70%;
 }
