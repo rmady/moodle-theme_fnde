@@ -182,3 +182,75 @@ body.format-tiles #region-main .course-content ul.tiles li#tile-8 {
     float: right;
     width: 70%;
 }
+
+/* Icons */
+.section .modtype_book img.iconlarge.activityicon,
+.section .modtype_page img.iconlarge.activityicon,
+.section .modtype_forum img.iconlarge.activityicon,
+.section .modtype_url img.iconlarge.activityicon,
+.section .modtype_quiz img.iconlarge.activityicon {
+    display: none;
+}
+
+.section .modtype_book .activityinstance,
+.section .modtype_page .activityinstance,
+.section .modtype_forum .activityinstance,
+.section .modtype_url .activityinstance,
+.section .modtype_quiz .activityinstance {
+    margin-left: 2rem;
+}
+
+.section .modtype_book .activityinstance .instancename:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../../pix/icons/icon_class1.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -3px;
+}
+
+.section .modtype_quiz .activityinstance .instancename:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../../pix/icons/icon_challenger.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -3px;
+}
+
+.section .modtype_forum .activityinstance .instancename:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../../pix/icons/icon_forum.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -3px;
+}
+
+.section .modtype_page .activityinstance .instancename:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../../pix/icons/icon_class2.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -3px;
+}
+
+.section .modtype_url .activityinstance .instancename:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../../pix/icons/icon_trail.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -3px;
+}
