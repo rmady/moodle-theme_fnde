@@ -101,6 +101,15 @@ body.format-tiles #region-main .course-content ul.tiles li#tile-8 {
     height: 8px;
 }
 
+.section.main .content .pagesechead {
+    width: 90%;
+}
+
+.section.main .content .pagesechead .sectiontitlecontainer,
+.section.main .content .pagesechead .sectiontitle {
+    width: 100%;
+}
+
 .format-tiles .sectionbutton .icon.fa-close:before {
     color: #c0392b;
 }
@@ -183,74 +192,54 @@ body.format-tiles #region-main .course-content ul.tiles li#tile-8 {
     width: 70%;
 }
 
-/* Icons */
-.section .modtype_book img.iconlarge.activityicon,
-.section .modtype_page img.iconlarge.activityicon,
+/* Ícones das atividades */
+
+/* Primeiro precisamos ocultar o ícone padrão */
+.section .modtype_book  img.iconlarge.activityicon,
+.section .modtype_page  img.iconlarge.activityicon,
 .section .modtype_forum img.iconlarge.activityicon,
-.section .modtype_url img.iconlarge.activityicon,
-.section .modtype_quiz img.iconlarge.activityicon {
+.section .modtype_url   img.iconlarge.activityicon,
+.section .modtype_quiz  img.iconlarge.activityicon {
     display: none;
 }
 
-.section .modtype_book .activityinstance,
-.section .modtype_page .activityinstance,
+/* Depois colocar a margem a esquerda */
+.section .modtype_book  .activityinstance,
+.section .modtype_page  .activityinstance,
 .section .modtype_forum .activityinstance,
-.section .modtype_url .activityinstance,
-.section .modtype_quiz .activityinstance {
+.section .modtype_url   .activityinstance,
+.section .modtype_quiz  .activityinstance {
     margin-left: 2rem;
 }
 
-.section .modtype_book .activityinstance .instancename:before {
+.section .activityinstance .instancename:before {
     content: "";
     width: 32px;
     height: 32px;
-    background: url("../../pix/icons/icon_class1.png") no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     left: -5px;
     top: -3px;
+}
+
+/* Por fim adicionar o ícone */
+.section .modtype_book .activityinstance .instancename:before {
+    background-image: url("../../pix/icons/icon_class1.png");
 }
 
 .section .modtype_quiz .activityinstance .instancename:before {
-    content: "";
-    width: 32px;
-    height: 32px;
-    background: url("../../pix/icons/icon_challenger.png") no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: -5px;
-    top: -3px;
+    background-image: url("../../pix/icons/icon_challenger.png");
 }
 
 .section .modtype_forum .activityinstance .instancename:before {
-    content: "";
-    width: 32px;
-    height: 32px;
-    background: url("../../pix/icons/icon_forum.png") no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: -5px;
-    top: -3px;
+    background-image: url("../../pix/icons/icon_forum.png");
 }
 
 .section .modtype_page .activityinstance .instancename:before {
-    content: "";
-    width: 32px;
-    height: 32px;
-    background: url("../../pix/icons/icon_class2.png") no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: -5px;
-    top: -3px;
+    background-image: url("../../pix/icons/icon_class2.png");
 }
 
 .section .modtype_url .activityinstance .instancename:before {
-    content: "";
-    width: 32px;
-    height: 32px;
-    background: url("../../pix/icons/icon_trail.png") no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: -5px;
-    top: -3px;
+    background-image: url("../../pix/icons/icon_trail.png");
 }
